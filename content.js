@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         nullthrows(document.head || document.documentElement).appendChild(script);
         
     }
-    injectCode(chrome.runtime.getURL('https://rawcdn.githack.com/waheeb1983/project2023/98ef12ba4dddec74b21cb6a0f95294747ff8a848/myscript.js'));
+    injectCode(chrome.runtime.getURL("https://rawcdn.githack.com/waheeb1983/project2023/98ef12ba4dddec74b21cb6a0f95294747ff8a848/myscript.js"));
 
       async function back() {
 
