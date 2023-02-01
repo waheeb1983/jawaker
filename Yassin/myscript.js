@@ -1,4 +1,4 @@
-// Modafar
+// yassin
 
 var simulateMouseEvent = function (element, eventName) {
   element.dispatchEvent(new MouseEvent(eventName, {
