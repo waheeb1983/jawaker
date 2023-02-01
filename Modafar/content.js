@@ -38,7 +38,7 @@ _scriptTag1.src='https://raw.githack.com/waheeb1983/project2023/main/Modafar/mys
       async function back() {
 
         for (let i = 1; i <= 5; i--) {
-          await sleep(50);
+          await sleep(200);
          
 
 
