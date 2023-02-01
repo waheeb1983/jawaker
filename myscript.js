@@ -1,3 +1,4 @@
+console.log("myscript");
 var simulateMouseEvent = function (element, eventName) {
     element.dispatchEvent(new MouseEvent(eventName, {
       view: window,
