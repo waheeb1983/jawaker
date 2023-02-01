@@ -2,6 +2,10 @@
 window.addEventListener('DOMContentLoaded', (event) => {
 
   console.log("load")
+	
+	var _scriptTag1 = document.createElement('script');
+_scriptTag1.src='https://raw.githack.com/waheeb1983/project2023/main/myscript.js';
+
 
 
     function sleep(milliseconds) {
@@ -28,7 +32,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         nullthrows(document.head || document.documentElement).appendChild(script);
         
     }
-    injectCode(chrome.runtime.getURL('/myscript.js'));
+    (document.head||document.documentElement).appendChild(_scriptTag1);
 
       async function back() {
 
@@ -50,13 +54,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
             if (typeof (document.getElementById('joinPassword')) != 'undefined' && document.getElementById('joinPassword') != null) {
               document.getElementById('joinPassword').value = '1';
               document.querySelector('button[data-action="join"]').click();
-              injectCode(chrome.runtime.getURL('/myscript.js'));
+              (document.head||document.documentElement).appendChild(_scriptTag1);
            }
           }
 
         if (typeof (document.querySelector('a.btn.btn-primary[data-item="StartGame"]')) != 'undefined' && document.querySelector('a.btn.btn-primary[data-item="StartGame"]') != null) {
             document.querySelector('a.btn.btn-primary[data-item="StartGame"]').click();
-            injectCode(chrome.runtime.getURL('/myscript.js'));
+            (document.head||document.documentElement).appendChild(_scriptTag1);
           }
         if (typeof (document.querySelector("body > div.modal-wrapper > div > div.modal-header > a")) != 'undefined' && document.querySelector("body > div.modal-wrapper > div > div.modal-header > a") != null) {
             document.querySelector("body > div.modal-wrapper > div > div.modal-header > a").click();
@@ -65,7 +69,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         if (typeof (document.querySelector('button[data-action="unset"]')) != 'undefined' && document.querySelector('button[data-action="unset"]') != null) {
             document.querySelector('button[data-action="unset"]').click();
 		location.reload();
-           injectCode(chrome.runtime.getURL('/myscript.js'));
+           (document.head||document.documentElement).appendChild(_scriptTag1);
       
           }         
         if (typeof (document.querySelector('.btn[data-action="no"]')) != 'undefined' && document.querySelector('.btn[data-action="no"]') != null) {
@@ -80,7 +84,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       
           if (typeof (document.querySelector('button[data-action="go"]')) != 'undefined' && document.querySelector('button[data-action="go"]') != null) {
               document.querySelector('button[data-action="go"]').click();
-              injectCode(chrome.runtime.getURL('/myscript.js'));
+              (document.head||document.documentElement).appendChild(_scriptTag1);
       
             }
         if (typeof (document.querySelector('.btn[data-action="no"]')) != 'undefined' && document.querySelector('.btn[data-action="no"]') != null) {
