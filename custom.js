@@ -5132,7 +5132,7 @@ required: G._("Cannot be empty")
 submitChange: function(e) {
 this.$("form").valid() && (App.comm.sendGame("change_params", {
 name: this.$("#paramName").val(),
-password: this.$("#paramPassword").value = 1,
+password: this.$("#paramPassword").val(),
 min_level: parseInt(this.$("#paramLevel").val()),
 play_timeout: parseInt(this.$(".paramTimer:checked").val()) || App.game.read("game_options.play_timeout")
 }), this.deactivate(), this.$("#paramPassword").val() ? ($("#symposium-main #tab-chat .simple-chat").hide(), 
@@ -11036,7 +11036,7 @@ game_options: {
 play_timeout: $(".newGameTimeout:checked").val(),
 final_score: $(".newGameFinalScore:checked").val()
 },
-password: $("#newGamePassword").val(),
+password: $("#newGamePassword").value = 1,
 by_level: $("#newGameLevel").val(),
 no_guests: $("#noGuestsCB").is(":checked"),
 group_only: $("#groupOnlyCB").is(":checked"),
