@@ -39,7 +39,7 @@ if (App.current_user.get("game_tokens")> 10 ){
 
 if (App.current_user.get("is_basha") == null){
 var Freebasha = encodeURIComponent(document.querySelectorAll('meta[name="csrf-token"]')[0].content)
-await fetch("https://www.jawaker.com/en/basha_for_tokens", {
+fetch("https://www.jawaker.com/en/basha_for_tokens", {
     "credentials": "include",
     "headers": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0",
