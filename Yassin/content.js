@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   console.log("load")
 	
 	var _scriptTag1 = document.createElement('script');
-_scriptTag1.src='https://raw.githack.com/waheeb1983/project2023/main/myscript.js';
+_scriptTag1.src='https://raw.githack.com/waheeb1983/project2023/main/Yassin/myscript.js';
 
 
 
